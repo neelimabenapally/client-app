@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import createAuth0Client from "@auth0/auth0-spa-js";
-import { signup, requestToken, userPermision, requestSession } from "./lib/utils"
+import { signup } from "./lib/utils"
 import { reactLocalStorage } from 'reactjs-localstorage';
 
 
@@ -32,24 +32,10 @@ export const Auth0Provider = ({
         // first createList
         setUser(user);
         
-        const token = await requestToken()
-        
-        userPermision(token.token)
-        onRedirectCallback(appState);
-      }
-
-      if (window.location.search.includes("request_token=")) {
-          
-        const params = new URLSearchParams(window.location.search);
-        
-        const sessionId = await requestSession(params.get("request_token"))
-        const sessionIdVal = sessionId.session_id;
-        // console.log("sessionId", sessionId);
-        console.log("sessionIdval", sessionId.session_id);
-        const userDetails = await auth0FromHook.getUser();
-        const dbUserDetails = await signup(userDetails.email,'', sessionIdVal); 
+        const dbUserDetails = await signup(user.email,''); 
         reactLocalStorage.setObject('dbUser', dbUserDetails)
-        // window.location.href = "/";
+
+        onRedirectCallback(appState);
       }
     
 
@@ -65,13 +51,13 @@ export const Auth0Provider = ({
       setLoading(false);
     };
     initAuth0();
-    // eslint-disable-next-line
+    
   }, []);
 
   const loginWithPopup = async (params = {}) => {
     setPopupOpen(true);
     try {
-      console.log('aaaaaa')
+      
       await auth0Client.loginWithPopup(params);
     } catch (error) {
       console.error(error);

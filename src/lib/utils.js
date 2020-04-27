@@ -1,8 +1,5 @@
-import { API_BASE_URL } from './constants'
-
 export const generateListingUrl = (type, genre = '') => {
     return ` /api/listing/${type}/${genre}`
-    // return `${API_BASE_URL}/discover/${type}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
 }
 
 export const getList = async (apiUrl, token) => {
@@ -28,7 +25,7 @@ export const getGenres = (genresUrl, token) => {
 };
 
 export const generateDetailUrl = (type,id) => {
-  return `/api/listing/${type}/view/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+  return `/api/listing/${type}/view/${id}`
 }
 
 export const generateReviewUrl = (type,id) => {
@@ -125,47 +122,6 @@ export const getSimilar = (type, id, token) => {
       .then(json => json.results)
 };
 
-  export const requestToken = () =>{
-    return fetch(`api/users/requestTMDBToken`).
-    then(res => res.json())
-  }
-
-  export const requestSession = (token) =>{
-    return fetch(`api/users/requestTMDBSession/${token}`).
-    then(res => res.json())
-  }
-
-  export const userPermision = (RequestToken) => {
-    window.location.href = `https://www.themoviedb.org/authenticate/${RequestToken}?redirect_to=https://5416f78a.ngrok.io`
-  }
-
-  // export const createFavList = {
-  //   method : 'POST',
-  //   headers: { 'Content-Type': 'application/json;charset=utf-8' },
-  //   body: JSON.stringify({
-  //                         "name": "Favourites list.",
-  //                         "description": "This is Favourites list of a user",
-  //                         "language": "en"
-  //                       })
-  // };
-
-  // export const postcreateFavList = (createFavList,) => {
-  //     return fetch(`/api/users/?api_key=${process.env.REACT_APP_API_KEY}&session_id=${window.localStorage.getItem('token')}`,createFavList)
-  //     .then(res => res.json())
-      
-  // };
-
-  // export const addToFavs = (listId, sessionId, mediaId) => {
-  //   return fetch(`https://api.themoviedb.org/3/list/${listId}/add_item?api_key=${process.env.REACT_APP_API_KEY}&session_id=${sessionId}`,{
-  //     headers: {
-  //       'Accept': 'application/json',
-  //       'Content-Type': 'application/json'
-  //     },
-  //     method: 'post',
-  //     body: JSON.stringify({ media_id: mediaId }) 
-  //   }).then(res => res.json())
-  // };
-
   export const login = (username, password) => {
    return fetch('/api/users', {
     headers: {
@@ -177,21 +133,15 @@ export const getSimilar = (type, id, token) => {
     }).then(res => res.json())
   };
 
-  export const signup = (username, password = '', sessID = '') => { 
+  export const signup = (username, password = '') => { 
     return fetch('/api/users?action=register',{
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
       method: 'post',
-      body: JSON.stringify({username: username, password: password, sessID: sessID }) 
+      body: JSON.stringify({username: username, password: password }) 
     }).then(res => res.json())
   };
-
-  
-
-
-  
-
   
 export default "";

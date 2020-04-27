@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../lib/fontawesome";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "../../react-auth0-spa";
 import { Col, Card, Button, Badge, CardDeck, ButtonToolbar, ButtonGroup } from "react-bootstrap";
-import { addFavourite, generateFavouriteUrl, getSimilar} from  "../../lib/utils";
+import { addFavourite, generateFavouriteUrl} from  "../../lib/utils";
 import { reactLocalStorage } from 'reactjs-localstorage';
 
 

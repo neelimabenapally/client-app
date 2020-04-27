@@ -115,7 +115,8 @@ const props = {
     getTokenSilently : () => 'dummy token',
     user: sampleUser
   },
-  sample: sample,
+  sample: sample
+  // sample: [sample,sample,sample]
   
 }
 
@@ -126,8 +127,7 @@ const propsForSimilar = {
     getTokenSilently : () => 'dummy token',
     user: sampleUser
   },
-  sample: sample,
-  
+  sample: sample
 }
 
 
@@ -168,9 +168,7 @@ storiesOf("Home Page/Listing", module)
         item={sampleNoPoster}
         type = "notype"
         dummyAuth = {props.dummyAuth}
-        action={movie => (
-          <button className="btn w-100 btn-primary">Test</button>
-        )}
+        
       />
     );
   });
@@ -183,7 +181,7 @@ storiesOf("Home Page/Listing", module)
     return (
       <DetailPage {...props} />
     );
-  });
+  })
 
   storiesOf("Home Page/Header", module)
   .addDecorator(story => (

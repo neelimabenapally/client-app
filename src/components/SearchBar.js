@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { InputGroup, FormControl, Button, Form, Row, Col } from "react-bootstrap";
+import { InputGroup, FormControl, Form, Row, Col } from "react-bootstrap";
 import { generateGenresUrl, getGenres } from "../lib/utils";
 import queryString from "query-string";
 import { useHistory } from "react-router-dom";
@@ -19,9 +19,6 @@ const SearchBar = props => {
   let sortValue = useRef(null);
   
   useEffect(() => {
-    // getGenres(genresUrl).then(allGenres => {
-    //     setGenres([genres[0], ...allGenres]);
-    //     });
     const fetch = async () => {
       const token = await getTokenSilently()
       getGenres(genresUrl, token).then((genresList) => setGenres(genresList) )
@@ -45,11 +42,6 @@ const SearchBar = props => {
     props.updateTextFilter(e.target.value)
   }
 
-  const handleChange = (e) => {
-    props.updateFilters(e.target.value)
-  }
-
-  console.log("ref value",sortValue)
   return (
       <Row>
         <Col> 

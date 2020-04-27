@@ -1,9 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import ReactDOM from "react-dom";
 import { useAuth0 } from "./react-auth0-spa";
-import { BrowserRouter, Route, Redirect, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import { Container } from 'react-bootstrap';
 import HomePage from "./components/HomePage";
 import Header from "./components/Header";
