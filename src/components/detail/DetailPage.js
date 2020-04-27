@@ -126,7 +126,7 @@ const DetailPage = (props) => {
     <Container>
         <Row>
             {error ? (
-                <Col>Unable to fetch the details for this title.</Col>
+                <Col><strong>Unable to fetch the details for this title.</strong></Col>
             ) : details() }
         </Row>  
         

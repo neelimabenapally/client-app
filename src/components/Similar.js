@@ -15,13 +15,15 @@ const Similar = (props) =>{
     const urlSegments = match.url.split("/");
     const typeValue = urlSegments[3];
     const idValue = urlSegments[4];
+    let cards = [];
 
     useEffect(() => {      
         const fetch = async () => {
             const token = await getTokenSilently()
             await getSimilar(typeValue, idValue, token).then((res) => 
             {
-                if (res.item && res.item.status_code) {
+                console.log("res similar",res);
+                if (res === undefined || (res.item && res.item.status_code)) {
                     setError(true)
                 }
                 setSimilar(res)
@@ -31,15 +33,17 @@ const Similar = (props) =>{
         fetch()
     }, []);
 
+    if(similar !== undefined){
+         cards = similar.map(item =>
+            <Cards 
+                key={item.id} 
+                item={item} 
+                type={typeValue}
+                hideButtonToolbar={true}
+                dummyAuth={props.dummyAuth}
+            />);
+    }
 
-    const cards = similar.map(item =>
-        <Cards 
-            key={item.id} 
-            item={item} 
-            type={typeValue}
-            hideButtonToolbar={true}
-            dummyAuth={props.dummyAuth}
-        />);
 
     return(
         <div>
@@ -47,7 +51,7 @@ const Similar = (props) =>{
             <br/><br/>
             <Row>
             {error ? (
-                <Col>Unable to fetch the details for this title.</Col>
+                <Col><strong>No similar movies found</strong></Col>
             ) : cards }
             </Row>  
             {error ? null: (
