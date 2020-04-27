@@ -1,34 +1,72 @@
 import React, { useState, useEffect } from "react";
-import { generateListingUrl, getList } from "../../lib/utils";
+import { generateListingUrl, getList, getFavourites } from "../../lib/utils";
 import { Row } from "react-bootstrap";
 import Cards from "./Cards";
 import SearchBar from "../SearchBar";
-import queryString from "query-string";
+import { useAuth0 } from "../../react-auth0-spa";
+import { reactLocalStorage } from 'reactjs-localstorage';
 
 
 const Listing = (props) => {
     
-    const [items, setItems] = useState([]);
+    const user = reactLocalStorage.getObject('dbUser');
+    const defautItems = props.sample ? [props.sample] : [];
+    const [items, setItems] = useState(defautItems);
     const [filters, setFilters] = useState({});
     const [textFilter, setTextFilter] = useState("");
+    const [favourites, setFavourites] = useState([]);
     const match = props.match;
     const urlSegments = match.url.split("/"); 
-    // console.log("urlSegments",urlSegments);
     const urlSegmentForApiCall = urlSegments[2] === 'fav' ? urlSegments[3]: urlSegments[2]
-    const urlSegmentForApiCall1 = urlSegments[2];
-    // console.log("urlSegmentForApiCall",urlSegmentForApiCall1);
     let apiUrl = generateListingUrl(urlSegmentForApiCall)
+    const auth = useAuth0() || props.dummyAuth;
+    const { getTokenSilently } = auth
     
     useEffect(() => {
-        const genre = filters.with_genres || ''
-        getList(`${apiUrl}${genre}`).then((list) => setItems(list) )
+
+        const genre = filters.with_genres || 0
+        const sort_by = filters.sort_by || ''
+        const fetch = async () => {
+            const token = await getTokenSilently()
+            console.log(token)
+            getList(`${apiUrl}filter_sort/${genre}/${sort_by}`, token).then((list) => setItems(list) )
+            
+            const allFavourites = await getFavourites(urlSegmentForApiCall, user.username, token) 
+
+            setFavourites(allFavourites.map(f => f.mediaId));
+        }
+        fetch()
     }, [filters]);
 
     const filteredItems = items.filter( (item) => {
         const title = item.original_name || item.original_title
         return title.toLowerCase().search(textFilter.toLowerCase()) !== -1
     })
-    const cards = filteredItems.map(item => <Cards item={item} type={urlSegmentForApiCall} />);
+
+    const removeFromFavourites = (itemToRemove) => { 
+        const index = favourites.indexOf(itemToRemove)
+        const favCopy = [...favourites]
+        favCopy.splice(index, 1)
+        setFavourites(favCopy) 
+    }
+
+    const addToFavourites = (item) => {
+        setFavourites([...favourites, item])
+    }
+
+
+
+    const cards = filteredItems.map(item => 
+        <Cards 
+            key={item.id} 
+            item={item} 
+            type={urlSegmentForApiCall} 
+            favourite={favourites.includes(item.id)} 
+            removeFromFavourites={removeFromFavourites}
+            addToFavourites={addToFavourites}
+            dummyAuth={props.dummyAuth}
+        />
+    );
 
     return (
         <div>
@@ -37,9 +75,10 @@ const Listing = (props) => {
                 updateTextFilter={setTextFilter} 
                 match={props.match} 
                 location={props.location}
+                {...props}
             />
             <Row className="justify-content-md-center">
-                {cards.length ? cards : "OOPS!!! No Results Found"}
+                {cards.length ? cards : "Loading..."}
             </Row>
         </div>
     )

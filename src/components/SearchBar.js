@@ -1,8 +1,9 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { InputGroup, FormControl, Button, Form, Row, Col } from "react-bootstrap";
 import { generateGenresUrl, getGenres } from "../lib/utils";
 import queryString from "query-string";
 import { useHistory } from "react-router-dom";
+import { useAuth0 } from "../react-auth0-spa";
 
 
 const SearchBar = props => {
@@ -13,12 +14,25 @@ const SearchBar = props => {
   const urlSegments = match.url.split("/"); 
   const urlSegmentForApiCall = urlSegments[2] === 'fav' ? urlSegments[3]: urlSegments[2]
   let genresUrl = generateGenresUrl(urlSegmentForApiCall)
+  const auth = useAuth0() || props.dummyAuth;
+  const { getTokenSilently } = auth
+  let sortValue = useRef(null);
   
   useEffect(() => {
     // getGenres(genresUrl).then(allGenres => {
     //     setGenres([genres[0], ...allGenres]);
     //     });
-    getGenres(genresUrl).then((genresList) => setGenres(genresList) )
+    const fetch = async () => {
+      const token = await getTokenSilently()
+      getGenres(genresUrl, token).then((genresList) => setGenres(genresList) )
+    }
+
+    if (sortValue.current) {
+      sortValue.current.focus();
+    }
+
+    fetch()
+    
   }, []);
 
   const handleSearchChange = (type, e) => {
@@ -31,6 +45,11 @@ const SearchBar = props => {
     props.updateTextFilter(e.target.value)
   }
 
+  const handleChange = (e) => {
+    props.updateFilters(e.target.value)
+  }
+
+  console.log("ref value",sortValue)
   return (
       <Row>
         <Col> 
@@ -47,8 +66,8 @@ const SearchBar = props => {
         <Col>
           <Form>
               <Form.Group controlId="exampleForm.SelectCustom">
-                <Form.Control as="select" custom onChange={handleSearchChange.bind(this, 'with_genres')}>
-                  <option selected value="">All Genres</option>
+                <Form.Control as="select" onChange={handleSearchChange.bind(this, 'with_genres')}>
+                  <option defaultValue value="0">All Genres</option>
                   {genres.map(genre => {
                   return (
                     <option key={genre.id} value={genre.id}>
@@ -60,7 +79,18 @@ const SearchBar = props => {
               </Form.Group>
             </Form>
         </Col>
-        
+        <Col>
+          <Form>
+              <Form.Group controlId="exampleForm.SelectCustom">
+                <Form.Control name = "sort" as="select" onChange={handleSearchChange.bind(this, 'sort_by')}>
+                  <option defaultValue value="">Sort By</option>
+                  <option value="popularity.desc">Popularity</option>
+                  <option value="primary_release_date.desc">Year</option>
+                  <option value="vote_average.desc">Rating</option>
+                </Form.Control>
+              </Form.Group>
+            </Form>
+        </Col>
         </Row>
         
       
