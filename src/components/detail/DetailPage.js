@@ -50,7 +50,7 @@ const DetailPage = (props) => {
   const addReviewHandler = async() => {
     const token = await getTokenSilently()
     addReview(reviewUrl, newReview, token).then( async (res) => {
-        const allReviews = await getReviews(typeDetailUrl, idDetailUrl) 
+        const allReviews = await getReviews(typeDetailUrl, idDetailUrl, token) 
         setReviews(allReviews)
     })
   }
