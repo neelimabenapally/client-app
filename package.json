@@ -2,7 +2,7 @@
   "name": "e-fanpage",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8080",
+  "proxy": "https://media-fanpage-server.herokuapp.com",
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.7.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
