@@ -19,11 +19,6 @@ const Header = (props) => {
                 <Nav.Link href="/profile">Profile</Nav.Link>}
                 <Nav.Link href="/listing/movie">Movies</Nav.Link>
                 <Nav.Link href="/listing/tv">Series</Nav.Link>
-                <NavDropdown title="Favourites" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/favourites/movie">Movies</NavDropdown.Item>
-                <NavDropdown.Item href="/favourites/tv">Series</NavDropdown.Item>
-                </NavDropdown>
-                
                 <div>
                     {!isAuthenticated && (
                         <Button onClick={() => loginWithRedirect({})}>Log in</Button>

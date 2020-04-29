@@ -1,6 +1,5 @@
 {
   "domain": "dev--wwrawg0.eu.auth0.com",
   "clientId": "g9sNQDJmn1TPlP4SwrrYfrtem0Gy7d7X",
-  "audience": "https://dev--wwrawg0.eu.auth0.com/api/v2/",
-  "redirect": "https://5416f78a.ngrok.io"
+  "audience": "https://dev--wwrawg0.eu.auth0.com/api/v2/"
 }
