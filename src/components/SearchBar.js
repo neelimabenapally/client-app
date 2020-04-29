@@ -27,7 +27,6 @@ const SearchBar = props => {
     if (sortValue.current) {
       sortValue.current.focus();
     }
-
     fetch()
     
   }, []);
@@ -61,8 +60,14 @@ const SearchBar = props => {
                 <Form.Control as="select" onChange={handleSearchChange.bind(this, 'with_genres')}>
                   <option defaultValue value="0">All Genres</option>
                   {genres.map(genre => {
+
+                    
                   return (
-                    <option key={genre.id} value={genre.id}>
+                    <option 
+                      key={genre.id} 
+                      value={genre.id} 
+                      selected={parseInt(filters.with_genres) === genre.id}
+                    >
                       {genre.name}
                     </option>
                   );
@@ -76,9 +81,9 @@ const SearchBar = props => {
               <Form.Group controlId="exampleForm.SelectCustom">
                 <Form.Control name = "sort" as="select" onChange={handleSearchChange.bind(this, 'sort_by')}>
                   <option defaultValue value="">Sort By</option>
-                  <option value="popularity.desc">Popularity</option>
-                  <option value="primary_release_date.desc">Year</option>
-                  <option value="vote_average.desc">Rating</option>
+                  <option selected={filters.sort_by === "popularity.desc"} value="popularity.desc">Popularity</option>
+                  <option selected={filters.sort_by === "primary_release_date.desc"} value="primary_release_date.desc">Year</option>
+                  <option selected={filters.sort_by === "vote_average.desc"} value="vote_average.desc">Rating</option>
                 </Form.Control>
               </Form.Group>
             </Form>

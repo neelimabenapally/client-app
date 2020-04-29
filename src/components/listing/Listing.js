@@ -5,6 +5,7 @@ import Cards from "./Cards";
 import SearchBar from "../SearchBar";
 import { useAuth0 } from "../../react-auth0-spa";
 import { reactLocalStorage } from 'reactjs-localstorage';
+import queryString from "query-string";
 
 
 const Listing = (props) => {
@@ -12,7 +13,7 @@ const Listing = (props) => {
     const user = reactLocalStorage.getObject('dbUser');
     const defautItems = props.sample ? [props.sample] : [];
     const [items, setItems] = useState(defautItems);
-    const [filters, setFilters] = useState({});
+    const [filters, setFilters] = useState(queryString.parse(props.location.search));
     const [textFilter, setTextFilter] = useState("");
     const [favourites, setFavourites] = useState([]);
     const match = props.match;
@@ -28,7 +29,6 @@ const Listing = (props) => {
         const sort_by = filters.sort_by || ''
         const fetch = async () => {
             const token = await getTokenSilently()
-            console.log(token)
             getList(`${apiUrl}filter_sort/${genre}/${sort_by}`, token).then((list) => setItems(list) )
             
             const allFavourites = await getFavourites(urlSegmentForApiCall, user.username, token) 
