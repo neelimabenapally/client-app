@@ -7,7 +7,7 @@ import { Form, Card, Button, Badge, Row, Col, Container,  CardGroup, Jumbotron }
 import { reactLocalStorage } from 'reactjs-localstorage';
 
 const DetailPage = (props) => {
-    const defautItem = props.sample ? props.sample : '';
+    const defautItem = props.sample ? props.sample[0] : '';
     const [error, setError] = useState(false);
     const [item, setItem] = useState(defautItem);
     const [cast, setCast] = useState({});

@@ -21,10 +21,10 @@ const Header = (props) => {
                 <Nav.Link href="/listing/tv">Series</Nav.Link>
                 <div>
                     {!isAuthenticated && (
-                        <Button onClick={() => loginWithRedirect({})}>Log in</Button>
+                        <Button onClick={() => loginWithRedirect({})}>Log In/Sign Up</Button>
                     )}
 
-                    {isAuthenticated && <Button onClick={() => logout()}>Log out</Button>}
+                    {isAuthenticated && <Button onClick={() => logout()}>Log Out</Button>}
                 </div>
             </Nav>
             </Navbar.Collapse>

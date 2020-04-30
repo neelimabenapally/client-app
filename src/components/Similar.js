@@ -22,7 +22,6 @@ const Similar = (props) =>{
             const token = await getTokenSilently()
             await getSimilar(typeValue, idValue, token).then((res) => 
             {
-                console.log("res similar",res);
                 if (res === undefined || (res.item && res.item.status_code)) {
                     setError(true)
                 }
@@ -30,7 +29,9 @@ const Similar = (props) =>{
             }) 
             
         }
-        fetch()
+        if(!props.sample) {
+            fetch()
+        }
     }, []);
 
     if(similar !== undefined){
