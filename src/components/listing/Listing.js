@@ -11,7 +11,7 @@ import queryString from "query-string";
 const Listing = (props) => {
     
     const user = reactLocalStorage.getObject('dbUser');
-    const defautItems = props.sample ? [props.sample] : [];
+    const defautItems = props.sample ? props.sample : [];
     const [items, setItems] = useState(defautItems);
     const [filters, setFilters] = useState(queryString.parse(props.location.search));
     const [textFilter, setTextFilter] = useState("");
@@ -25,17 +25,24 @@ const Listing = (props) => {
     
     useEffect(() => {
 
+
         const genre = filters.with_genres || 0
         const sort_by = filters.sort_by || ''
         const fetch = async () => {
             const token = await getTokenSilently()
             getList(`${apiUrl}filter_sort/${genre}/${sort_by}`, token).then((list) => setItems(list) )
             
-            const allFavourites = await getFavourites(urlSegmentForApiCall, user.username, token) 
 
+            let allFavourites = await getFavourites(urlSegmentForApiCall, user.username, token) 
+
+            if (allFavourites.status === 401) allFavourites = []
+            
             setFavourites(allFavourites.map(f => f.mediaId));
         }
-        fetch()
+        if (!props.sample) {
+            fetch()
+        }
+        
     }, [filters]);
 
     const filteredItems = items.filter( (item) => {

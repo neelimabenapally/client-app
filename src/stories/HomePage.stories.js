@@ -115,8 +115,8 @@ const props = {
     getTokenSilently : () => 'dummy token',
     user: sampleUser
   },
-  sample: sample
-  // sample: [sample,sample,sample]
+  // sample: sample
+  sample: [sample,sample,sample]
   
 }
 
@@ -127,7 +127,7 @@ const propsForSimilar = {
     getTokenSilently : () => 'dummy token',
     user: sampleUser
   },
-  sample: sample
+  sample: [sample, sample, sample]
 }
 
 

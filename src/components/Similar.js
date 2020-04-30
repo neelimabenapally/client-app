@@ -8,7 +8,7 @@ const Similar = (props) =>{
     const auth = useAuth0() || props.dummyAuth;
     const { getTokenSilently } = auth;
     const [error, setError] = useState(false);
-    const defaultSimilar = props.sample ? [props.sample] : []
+    const defaultSimilar = props.sample ? props.sample : []
     const [similar, setSimilar] = useState(defaultSimilar);
     
     const match = props.match;

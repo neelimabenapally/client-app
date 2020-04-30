@@ -21,8 +21,7 @@ const Cards = ({
     let favouriteUrl = generateFavouriteUrl(type, item.id);
     const [buttonName, setButtonName] = useState("Add to Favourite");
     const [token, setToken] = useState('');
-    console.log(dummyAuth)
-    const auth = useAuth0() || dummyAuth;
+    const auth = useAuth0() || dummyAuth; // Authentication Token From Auth0 or dummy Authentication Token for Storybook
     const { getTokenSilently } = auth
     const user = reactLocalStorage.getObject('dbUser');
 
@@ -39,8 +38,6 @@ const Cards = ({
      
     const addOrRemoveFromFavourites = async () => {
         await addFavourite(favouriteUrl, user.username, item.id, type, !favourite, token)
-
-        console.log(favourite)
         if (!favourite) {
             addToFavourites(item.id)
         } else {

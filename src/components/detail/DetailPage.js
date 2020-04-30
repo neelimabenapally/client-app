@@ -20,13 +20,13 @@ const DetailPage = (props) => {
     let detailUrl = generateDetailUrl(typeDetailUrl, idDetailUrl);
     let reviewUrl = generateReviewUrl(typeDetailUrl, idDetailUrl);
     const auth = useAuth0() || props.dummyAuth;
-    const { getTokenSilently } = auth
+    const { getTokenSilently } = auth // Authentication Token From Auth0 or dummy Authentication Token for Storybook
     
     
     useEffect(() => {
         const fetch = async () => {
-            const token = await getTokenSilently()
-            getDetail(detailUrl, token).then(async (res) => {
+            const token = await getTokenSilently();
+            getDetail(detailUrl, token).then(async (res) => { // Get Details and Cast of Movie or Series
                 const user = reactLocalStorage.getObject('dbUser')
                 if (res.item && res.item.status_code) {
                     setError(true)
@@ -39,11 +39,14 @@ const DetailPage = (props) => {
                     id: res.item.id,
                     username: user.username
                 })
-                const allReviews = await getReviews(typeDetailUrl, idDetailUrl, token) 
+                const allReviews = await getReviews(typeDetailUrl, idDetailUrl, token) // Get Reviews of Movie or Series
                 setReviews(allReviews)
             })
         }
-        fetch()
+        if (!props.sample) {
+            fetch()
+        }
+        
     }, []);
 
     
@@ -76,14 +79,13 @@ const DetailPage = (props) => {
                     <Card.Title><strong>{item.original_name || item.original_title}</strong></Card.Title>
                     <Card.Text><strong>Overview:</strong> {item.overview}</Card.Text>
                     <Card.Text><strong>Genres: </strong> 
-                                        {item.genres && item.genres.map(g => (
-                                            <span key={g.name}>
-                                                {g.name}{'\u00A0'}{'\u00A0'}{'\u00A0'}
-                                            </span>
-                                        ))}
-                                    </Card.Text>
+                            {item.genres && item.genres.map(g => (
+                                <span key={g.name}>
+                                    {g.name}{'\u00A0'}{'\u00A0'}{'\u00A0'}
+                                </span>
+                        ))}
+                    </Card.Text>
                     <Card.Text><strong>Rating:</strong> {item.vote_average}</Card.Text>
-                    
                     <Card.Text><strong>Runtime:</strong>{item.runtime || item.episode_run_time}</Card.Text>
                     {typeDetailUrl === "tv" ?
                         <React.Fragment>
@@ -129,10 +131,7 @@ const DetailPage = (props) => {
                 <Col><strong>Unable to fetch the details for this title.</strong></Col>
             ) : details() }
         </Row>  
-        
-
         <Row style = {{minHeight:'30px'}}></Row>
-
         {error ? null: (
             <React.Fragment>
                 <Row>   
@@ -157,9 +156,7 @@ const DetailPage = (props) => {
                         </Button>
                     </Col> 
                 </Row>
-
                 <Row style = {{minHeight:'30px'}}></Row>
-
                 <Row>
                     <Col> 
                         <h5>Reviews:</h5>                      
@@ -169,7 +166,7 @@ const DetailPage = (props) => {
                                         <h6 key={i}>{reviews[i].username}</h6>
                                         <p>{reviews[i].review}</p>
                                     </Jumbotron>
-                                    )})}
+                            )})}
                     </Col> 
                 </Row>
             </React.Fragment>

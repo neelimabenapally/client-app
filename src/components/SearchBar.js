@@ -21,7 +21,13 @@ const SearchBar = props => {
   useEffect(() => {
     const fetch = async () => {
       const token = await getTokenSilently()
-      getGenres(genresUrl, token).then((genresList) => setGenres(genresList) )
+      getGenres(genresUrl, token).then((genresList) => { 
+        console.log(genresList) 
+        if (genresList) {
+          setGenres(genresList) 
+        }
+        
+      })
     }
 
     if (sortValue.current) {
