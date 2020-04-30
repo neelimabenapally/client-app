@@ -1,5 +1,5 @@
 export const generateListingUrl = (type, genre = '') => {
-    return `https://media-fanpage-server.herokuapp.com/api/listing/${type}/${genre}`
+    return `${process.env.REACT_APP_SERVER_URL}/api/listing/${type}/${genre}`
 }
 
 export const getList = async (apiUrl, token) => {
@@ -12,7 +12,7 @@ export const getList = async (apiUrl, token) => {
 };
 
 export const generateGenresUrl = (type) => {
-  return `https://media-fanpage-server.herokuapp.com/api/genres/${type}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+  return `${process.env.REACT_APP_SERVER_URL}/api/genres/${type}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
 }
 export const getGenres = (genresUrl, token) => {
     return fetch(genresUrl,{headers: {
@@ -25,15 +25,15 @@ export const getGenres = (genresUrl, token) => {
 };
 
 export const generateDetailUrl = (type,id) => {
-  return `https://media-fanpage-server.herokuapp.com/api/listing/${type}/view/${id}`
+  return `${process.env.REACT_APP_SERVER_URL}/api/listing/${type}/view/${id}`
 }
 
 export const generateReviewUrl = (type,id) => {
-  return `https://media-fanpage-server.herokuapp.com/api/reviews/${type}/${id}`
+  return `${process.env.REACT_APP_SERVER_URL}/api/reviews/${type}/${id}`
 }
 
 export const generateFavouriteUrl = (type,id) => {
-  return `https://media-fanpage-server.herokuapp.com/api/favourites/${type}/${id}`
+  return `${process.env.REACT_APP_SERVER_URL}/api/favourites/${type}/${id}`
 }
 
 export const getDetail = (generateDetailUrl, token) => {
@@ -60,7 +60,7 @@ export const addReview = (reviewUrl, review, token) => {
 
 export const getReviews = (type, id, token) => {
   return fetch(
-    `https://media-fanpage-server.herokuapp.com/api/reviews/${type}/${id}`,
+    `${process.env.REACT_APP_SERVER_URL}/api/reviews/${type}/${id}`,
     {headers: {
       'Authorization': `Bearer ${token}`
    }
@@ -91,7 +91,7 @@ export const addFavourite = (favouriteUrl, username, id, type, favourite = true,
 
 export const getFavourites = ( type, username, token) => {
   return fetch(
-    `https://media-fanpage-server.herokuapp.com/api/favourites/${username}/${type}`,
+    `${process.env.REACT_APP_SERVER_URL}/api/favourites/${username}/${type}`,
     {headers: {
       'Authorization': `Bearer ${token}`
    }
@@ -101,7 +101,7 @@ export const getFavourites = ( type, username, token) => {
 };
 
 export const generateCastUrl = (type,id) => {
-  return `https://media-fanpage-server.herokuapp.com/api/listing/${type}/view/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+  return `${process.env.REACT_APP_SERVER_URL}/api/listing/${type}/view/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
 }
 export const getCast = (generateDetailUrl) => {
     return fetch(generateDetailUrl,{headers: {
@@ -113,7 +113,7 @@ export const getCast = (generateDetailUrl) => {
 
 
 export const getSimilar = (type, id, token) => {
-    return fetch(`https://media-fanpage-server.herokuapp.com/api/listing/similar/${type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`,
+    return fetch(`${process.env.REACT_APP_SERVER_URL}/api/listing/similar/${type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`,
     {headers: {
       'Authorization': `Bearer ${token}`
      }
@@ -123,7 +123,7 @@ export const getSimilar = (type, id, token) => {
 };
 
   export const login = (username, password) => {
-   return fetch(`https://media-fanpage-server.herokuapp.com/api/users`, {
+   return fetch(`${process.env.REACT_APP_SERVER_URL}/api/users`, {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -134,7 +134,7 @@ export const getSimilar = (type, id, token) => {
   };
 
   export const signup = (username, password = '') => { 
-    return fetch(`https://media-fanpage-server.herokuapp.com/api/users?action=register`,{
+    return fetch(`${process.env.REACT_APP_SERVER_URL}/api/users?action=register`,{
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'

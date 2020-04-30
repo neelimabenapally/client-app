@@ -21,7 +21,11 @@ const Header = (props) => {
                 <Nav.Link href="/listing/tv">Series</Nav.Link>
                 <div>
                     {!isAuthenticated && (
-                        <Button onClick={() => loginWithRedirect({})}>Log In/Sign Up</Button>
+                        <React.Fragment>
+                            <Button onClick={() => loginWithRedirect({})}>Log In</Button> &nbsp;
+                            <Button variant="light" onClick={() => loginWithRedirect({})}>Sign Up</Button>
+                        </React.Fragment>
+                        
                     )}
 
                     {isAuthenticated && <Button onClick={() => logout()}>Log Out</Button>}

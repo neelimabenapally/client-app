@@ -14,9 +14,11 @@ Media-Fanpage app lists movies or series based on the user selection.
 + Users get the details of cast also when getting the details about a movie or series
 + Profile Page of the User
 
+
 ## Setup requirements.
 
 . . . . Briefly state (to a third party) the setup steps necessary to run your app/client. [You need only reference the server-side repo's URL for completeness - its README will detail server-side initialization requirements.]
+
 
 ## Data Model Design.
 
@@ -3667,11 +3669,28 @@ Media-Fanpage app lists movies or series based on the user selection.
 
 
 
+
+
 ## App Design.
 
 ### Component catalogue.
 
-[stories]: ./public/storybookImages/storybookComponents.png
+![Storybook Components][storybookComponents]: 
+> Component stories from the Storybook UI 
+
+![Card Component][card]
+
+![Detail Page][detailPage]
+
+![Header][Header]
+
+![Home Page][homepage]
+
+![Listing Page][listingPage]
+
+![Profile Page][profilePage]
+
+![Similars Page][similarsPage]
 
 
 ### Design patterns.
@@ -3690,8 +3709,27 @@ Media-Fanpage app lists movies or series based on the user selection.
 
 . . . . . Screenshots of app's views (see example below) with appropriate captions (For extension to the Movies Fan App, only show the new/modified views) . . . . . . . 
 
-![][view]
->Shows detailed information on a movie. Clicking the 'Show Reviews' button will display extracts from critic reviews.
+![HomePage View][HomePageView]
+> This is the Landing Page. Clicking on Movie/Tv Image takes you to movies/Series list page. 
+
+![Movie List Page View][MovieListPageView]
+> Displays list of movies. User can add a movie to favourites list by clicking on the Add to Favourite button or delete a movie from favourites list clicking on the Remove from Favourite button and get a list of similar movies by clicking on the similar button.
+
+![Series List Page View][SeriesListPageView]
+> Displays list of series. User can add a series to favourites list by clicking on the Add to Favourite button or delete a series from favourites list clicking on the Remove from Favourite button and get a list of similar series by clicking on the similar button.
+
+![Detail Page View][DetailPageView]
+> Displays details and reviews of the movie/series and users can add reviews their here.
+
+![Similar Movies Page View][SimilarMoviesPageView]
+> Displays list of movies similar to the selected movie.
+
+![Similar Series Page View][SimilarSeriesPageView]
+> Displays list of series similar to the selected series.
+
+![Profile Page View][ProfilePageView]
+> Displays the profile of the user i.e. user name and email id along with user image.
+
 
 ## Routing.
 
@@ -3713,3 +3751,19 @@ Reference: https://auth0.com/docs/quickstart/spa/react
 Heroku used for Deployment of the App.
 Reference: https://www.freecodecamp.org/news/deploy-a-react-node-app-to/
 https://blog.heroku.com/deploying-react-with-zero-configuration
+
+[storybookComponents]: ./public/storybookImages/storybookComponents.png
+[card]: ./public/storybookImages/card.png
+[detailPage]: ./public/storybookImages/detailPage.png
+[Header]: ./public/storybookImages/Header.png
+[homepage]: ./public/storybookImages/homepage.png
+[listingPage]: ./public/storybookImages/listingPage.png
+[profilePage]: ./public/storybookImages/profilePage.png
+[similarsPage]: ./public/storybookImages/similarsPage.png
+[HomePageView]: ./public/UI-Views/HomePageView.png
+[MovieListPageView]: ./public/UI-Views/MovieListPageView.png
+[SeriesListPageView]: ./public/UI-Views/SeriesListPageView.png
+[DetailPageView]: ./public/UI-Views/DetailPageView.png
+[SimilarMoviesPageView]: ./public/UI-Views/SimilarMoviesPageView.png
+[SimilarSeriesPageView]: ./public/UI-Views/SimilarSeriesPageView.png
+[ProfilePageView]: ./public/UI-Views/ProfilePageView.png
