@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col, Figure } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const HomePage = () => { 
+const HomePage = () => {
     return (
         <Row className="justify-content-md-center">
             <Col className="text-center">
@@ -15,10 +15,9 @@ const HomePage = () => {
                         />
                     </Link>
                 </Figure>
-                
             </Col>
             <Col className="text-center">
-                 <Figure>
+                <Figure>
                     <Link to="/listing/tv">
                         <Figure.Image
                             width={400}

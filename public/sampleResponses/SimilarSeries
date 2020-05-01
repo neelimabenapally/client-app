@@ -1,0 +1,419 @@
+Similar Series Response:
+{
+  "page": 1,
+  "results": [
+    {
+      "original_name": "Revenge",
+      "id": 39358,
+      "name": "Revenge",
+      "vote_count": 264,
+      "vote_average": 7.2,
+      "first_air_date": "2011-09-21",
+      "poster_path": "/qx7XytRgg1F03NN5BoK8jx3Cyft.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        10766
+      ],
+      "original_language": "en",
+      "backdrop_path": "/u7XADmNNOyuza7UkoAa94bycqp3.jpg",
+      "overview": "When Emily Thorne moves to the Hamptons, everyone wonders about the new girl, but she knows everything about them, including what they did to her family. Years ago, they took everything from her. Now, one by one, she's going to make them pay.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 14.539
+    },
+    {
+      "backdrop_path": "/ubggJhb6QysnXVercF4ij9RLJJu.jpg",
+      "first_air_date": "1971-10-24",
+      "genre_ids": [
+        16,
+        10765,
+        35,
+        10759
+      ],
+      "id": 31572,
+      "name": "Lupin the Third",
+      "origin_country": [
+        "JP"
+      ],
+      "original_language": "ja",
+      "original_name": "ルパン三世",
+      "overview": "Arsene Lupin III is the grandson of the master thief Arsene Lupin. With his cohorts Daisuke Jigen and Goemon Ishikawa XIII and his love interest Fujiko Mine, he pulls off the greatest heists of all time while always escaping the grasp of Inspector Koichi Zenigata.",
+      "poster_path": "/sGN9eHc5QJarWlDOSznQPcsHixm.jpg",
+      "vote_average": 8.4,
+      "vote_count": 22,
+      "popularity": 22.791
+    },
+    {
+      "original_name": "The Saint",
+      "id": 4333,
+      "name": "The Saint",
+      "vote_count": 41,
+      "vote_average": 7.2,
+      "first_air_date": "1962-10-04",
+      "poster_path": "/zwNVpAJkE4Gu1jv922IH7GOQlen.jpg",
+      "genre_ids": [
+        35,
+        10759
+      ],
+      "original_language": "en",
+      "backdrop_path": "/cMHgfuHTN6GN7eA8ljSNNw7cUCQ.jpg",
+      "overview": "Simon Templar is The Saint, a handsome, sophisticated, debonair, modern-day Robin Hood who recovers ill-gotten wealth and redistributes it to those in need.",
+      "origin_country": [
+        "GB"
+      ],
+      "popularity": 15.071
+    },
+    {
+      "original_name": "Twin Peaks",
+      "id": 1920,
+      "name": "Twin Peaks",
+      "vote_count": 908,
+      "vote_average": 8.2,
+      "first_air_date": "1990-04-08",
+      "poster_path": "/ypeuD2LJiHSotbwy5C7wFeZSBhv.jpg",
+      "genre_ids": [
+        18,
+        9648
+      ],
+      "original_language": "en",
+      "backdrop_path": "/d6sUSb83506swwVLq7WOKMwE01W.jpg",
+      "overview": "The body of Laura Palmer is washed up on a beach near the small Washington state town of Twin Peaks. FBI Special Agent Dale Cooper is called in to investigate her strange demise only to uncover a web of mystery that ultimately leads him deep into the heart of the surrounding woodland and his very own soul.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 28.49
+    },
+    {
+      "backdrop_path": "/fJbERbUgWwBScDTmumpH1Lsl5aJ.jpg",
+      "first_air_date": "1995-09-24",
+      "genre_ids": [
+        18
+      ],
+      "id": 1457,
+      "name": "Pride and Prejudice",
+      "origin_country": [
+        "GB"
+      ],
+      "original_language": "en",
+      "original_name": "Pride and Prejudice",
+      "overview": "Set in England in the early 19th century, Pride and Prejudice tells the story of Mr and Mrs Bennet's five unmarried daughters after the rich and eligible Mr Bingley and his status-conscious friend, Mr Darcy, have moved into their neighbourhood. While Bingley takes an immediate liking to the eldest Bennet daughter, Jane, Darcy has difficulty adapting to local society and repeatedly clashes with the second-eldest Bennet daughter, Elizabeth.",
+      "poster_path": "/rlqOyCEaZuKoYTI1vhZ0kVyCTV7.jpg",
+      "vote_average": 8.2,
+      "vote_count": 158,
+      "popularity": 19.342
+    },
+    {
+      "original_name": "Taboo",
+      "id": 65708,
+      "name": "Taboo",
+      "vote_count": 569,
+      "vote_average": 7.9,
+      "first_air_date": "2017-01-07",
+      "poster_path": "/om1wVOuEtwH3krHutIWO9sJzkS5.jpg",
+      "genre_ids": [
+        18,
+        9648
+      ],
+      "original_language": "en",
+      "backdrop_path": "/tGQ9pbyyaB9mYqp8DoUijRniLwv.jpg",
+      "overview": "Adventurer James Keziah Delaney returns to London from Africa in 1814 along with fourteen stolen diamonds to seek vengeance after the death of his father.",
+      "origin_country": [
+        "GB",
+        "US"
+      ],
+      "popularity": 15.481
+    },
+    {
+      "original_name": "Outlander",
+      "id": 56570,
+      "name": "Outlander",
+      "vote_count": 739,
+      "vote_average": 7.6,
+      "first_air_date": "2014-08-09",
+      "poster_path": "/70PRIpG1phOyphejeLwi0K8zdJo.jpg",
+      "genre_ids": [
+        12,
+        18,
+        14,
+        10749
+      ],
+      "original_language": "en",
+      "backdrop_path": "/Ai6HryU8R00XSgiCTeQoF75um84.jpg",
+      "overview": "The story of Claire Randall, a married combat nurse from 1945 who is mysteriously swept back in time to 1743, where she is immediately thrown into an unknown world where her life is threatened. When she is forced to marry Jamie, a chivalrous and romantic young Scottish warrior, a passionate affair is ignited that tears Claire's heart between two vastly different men in two irreconcilable lives.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 47.761
+    },
+    {
+      "original_name": "Leverage",
+      "id": 7482,
+      "name": "Leverage",
+      "vote_count": 161,
+      "vote_average": 7.5,
+      "first_air_date": "2008-12-07",
+      "poster_path": "/7EJkH5tjrV6zDphg39sh6lOrJ9l.jpg",
+      "genre_ids": [
+        35,
+        18,
+        10759
+      ],
+      "original_language": "en",
+      "backdrop_path": "/cubucYolMq8sFhw8V5e8zBoAcjD.jpg",
+      "overview": "A five-person team comprised of a thief, a grifter, a hacker, and a retrieval specialist, led by former insurance investigator Nathan Ford, use their skills to fight corporate and governmental injustices inflicted on ordinary citizens.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 17.681
+    },
+    {
+      "original_name": "Poldark",
+      "id": 62084,
+      "name": "Poldark",
+      "vote_count": 152,
+      "vote_average": 7.8,
+      "first_air_date": "2015-03-08",
+      "poster_path": "/fTJZHMzlIGSJVPSe7Xz4p5SRwYP.jpg",
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/p8A1HMw3f3djxMwQRccCuxdy754.jpg",
+      "overview": "Britain is in the grip of a chilling recession... falling wages, rising prices, civil unrest - only the bankers are smiling. It's 1783 and Ross Poldark returns from the American War of Independence to his beloved Cornwall to find his world in ruins: his father dead, the family mine long since closed, his house wrecked and his sweetheart pledged to marry his cousin. But Ross finds that hope and love can be found when you are least expecting it in the wild but beautiful Cornish landscape.",
+      "origin_country": [
+        "GB"
+      ],
+      "popularity": 20.717
+    },
+    {
+      "original_name": "Blood & Treasure",
+      "id": 88118,
+      "name": "Blood & Treasure",
+      "vote_count": 36,
+      "vote_average": 5.2,
+      "first_air_date": "2019-05-21",
+      "poster_path": "/xbWqfPKBhqOZQEGq7HdDkX0Bjib.jpg",
+      "genre_ids": [
+        18,
+        10759
+      ],
+      "original_language": "en",
+      "backdrop_path": "/lKyhQWV1XJ6rRFYj2ZgTOTIWFw6.jpg",
+      "overview": "An antiquities expert teams up with an art thief to catch a terrorist who funds his attacks using stolen artifacts.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 13.809
+    },
+    {
+      "original_name": "Frontier",
+      "id": 64555,
+      "name": "Frontier",
+      "vote_count": 106,
+      "vote_average": 6.3,
+      "first_air_date": "2016-11-06",
+      "poster_path": "/mhIeCeYgG4WJHNzaw2EyRpvmGX8.jpg",
+      "genre_ids": [
+        18,
+        10759
+      ],
+      "original_language": "en",
+      "backdrop_path": "/sVAJI4DT4nJxtyKCEGBDimv0aoK.jpg",
+      "overview": "The chaotic and violent struggle to control wealth and power in the North American fur trade in late 18th century Canada. Told from multiple perspectives, Frontier takes place in a world where business negotiations might be resolved with close-quarter hatchet fights, and where delicate relations between native tribes and Europeans can spark bloody conflicts.",
+      "origin_country": [
+        "CA"
+      ],
+      "popularity": 20.463
+    },
+    {
+      "original_name": "The Angry Beavers",
+      "id": 3579,
+      "name": "The Angry Beavers",
+      "vote_count": 91,
+      "vote_average": 7.1,
+      "first_air_date": "1997-04-20",
+      "poster_path": "/9KYUA9tZrVNVXk2LTaYNMqGpHUj.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "original_language": "en",
+      "backdrop_path": null,
+      "overview": "The Angry Beavers is an American animated television series created by Mitch Schauer for the Nickelodeon channel. The series revolves around Daggett and Norbert Beaver, two young beaver brothers who have left their home to become bachelors in the forest near the fictional Wayouttatown, Oregon. The show premiered in the United States on April 19, 1997. The show started airing on the Nickelodeon Canada channel when it launched on November 2, 2009. The series aired on The '90s Are All That block on TeenNick in the US on October 7, 2011 as part of the block's U Pick with Stick line-up. The series was also up for a U Pick with Stick showdown on The '90s Are All That for the weekend of February 3, 2012, but lost to Rocko's Modern Life and did not air. The series was added to the Sunday line-up on The '90s Are All That on TeenNick, and aired from February 10, 2013, to March 3, 2013. The series returned to The '90s Are All That on TeenNick on March 25, 2013, but has since left the line-up again. The series is also currently being released on DVD.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 13.801
+    },
+    {
+      "original_name": "Planet Earth II",
+      "id": 68595,
+      "name": "Planet Earth II",
+      "vote_count": 408,
+      "vote_average": 8.3,
+      "first_air_date": "2016-11-06",
+      "poster_path": "/gTvArgUjEUDxYMqJHSwVlrn1Cjk.jpg",
+      "genre_ids": [
+        99
+      ],
+      "original_language": "en",
+      "backdrop_path": "/pzkuv68GcI2PIYLLdPuKxFbT81H.jpg",
+      "overview": "David Attenborough presents a documentary series exploring how animals meet the challenges of surviving in the most iconic habitats on earth.",
+      "origin_country": [
+        "GB"
+      ],
+      "popularity": 14.48
+    },
+    {
+      "original_name": "TURN: Washington's Spies",
+      "id": 57276,
+      "name": "TURN: Washington's Spies",
+      "vote_count": 146,
+      "vote_average": 7.2,
+      "first_air_date": "2014-04-06",
+      "poster_path": "/AehTUycX0VSvCkOOkZzurLnjHsS.jpg",
+      "genre_ids": [
+        18,
+        10768
+      ],
+      "original_language": "en",
+      "backdrop_path": "/fhIxXKTzGptL09psh3myhtndADD.jpg",
+      "overview": "The story of New York farmer, Abe Woodhull, who bands together with a group of childhood friends to form The Culper Ring, an unlikely group of spies who turn the tide in America’s fight for independence.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 15.935
+    },
+    {
+      "original_name": "Daniel Boone",
+      "id": 11053,
+      "name": "Daniel Boone",
+      "vote_count": 14,
+      "vote_average": 7.1,
+      "first_air_date": "1964-09-24",
+      "poster_path": "/lL4XDk4wRELIqciMtjcrD4TQ5m6.jpg",
+      "genre_ids": [
+        37,
+        10759
+      ],
+      "original_language": "en",
+      "backdrop_path": "/ocGIgjb53YKuPoLykhxO2orKrlc.jpg",
+      "overview": "Daniel Boone is an American action-adventure television series starring Fess Parker as Daniel Boone that aired from September 24, 1964 to September 10, 1970 on NBC for 165 episodes, and was made by 20th Century Fox Television. Ed Ames co-starred as Mingo, Boone's Cherokee friend, for the first four seasons of the series. Albert Salmi portrayed Boone's companion Yadkin in season one only. Dallas McKennon portrayed innkeeper Cincinnatus. Country Western singer-actor Jimmy Dean was a featured actor as Josh Clements during the 1968–1970 seasons. Actor and former NFL football player Rosey Grier made regular appearances as Gabe Cooper in the 1969 to 1970 season. The show was broadcast \"in living color\" beginning in fall 1965, the second season, and was shot entirely in California and Kanab, Utah.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 9.079
+    },
+    {
+      "original_name": "Hustle",
+      "id": 3764,
+      "name": "Hustle",
+      "vote_count": 76,
+      "vote_average": 7.8,
+      "first_air_date": "2004-02-24",
+      "poster_path": "/oeSEmYM2iDp5395DLz2POnoRX2B.jpg",
+      "genre_ids": [
+        35,
+        80,
+        18,
+        9648
+      ],
+      "original_language": "en",
+      "backdrop_path": null,
+      "overview": "A motley group of London con artists pull of a series of daring and intricate stings.",
+      "origin_country": [
+        "GB"
+      ],
+      "popularity": 13.558
+    },
+    {
+      "original_name": "John Adams",
+      "id": 15114,
+      "name": "John Adams",
+      "vote_count": 141,
+      "vote_average": 7.9,
+      "first_air_date": "2008-03-16",
+      "poster_path": "/34qRIcLKkTpmM9x9gzm9nKvo5pW.jpg",
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/nWK4U7wlAAGTARPZKScTqW3rm0T.jpg",
+      "overview": "Adapted from David McCullough's Pulitzer Prize-winning biography, this lavish seven-part miniseries chronicles the life of Founding Father John Adams, starting with the Boston Massacre of 1770 through his years as an ambassador in Europe, then his terms as vice president and president of the United States, up to his death on July 4, 1826.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 6.769
+    },
+    {
+      "original_name": "Harlots",
+      "id": 69541,
+      "name": "Harlots",
+      "vote_count": 49,
+      "vote_average": 7.4,
+      "first_air_date": "2017-03-27",
+      "poster_path": "/w6F93B2ZUCEUhRpgCS1cU82htqz.jpg",
+      "genre_ids": [
+        18,
+        10751
+      ],
+      "original_language": "en",
+      "backdrop_path": "/kusA76u4LF4Gd4lUY7cYF3GKrSC.jpg",
+      "overview": "Brothel owner, Margaret Wells, struggles to raise her daughters in London during the 18th century.",
+      "origin_country": [],
+      "popularity": 9.463
+    },
+    {
+      "original_name": "Zone Blanche",
+      "id": 70613,
+      "name": "Black Spot",
+      "vote_count": 22,
+      "vote_average": 6.9,
+      "first_air_date": "2017-03-09",
+      "poster_path": "/24YXi0GA3DsrPBe7ttw8XVV3uL7.jpg",
+      "genre_ids": [
+        80,
+        18,
+        9648
+      ],
+      "original_language": "fr",
+      "backdrop_path": "/oEC9mN0TGzZfKBVD6LRKJvnnZPn.jpg",
+      "overview": "In the small bordertown of Villefranche, lost in the heart of a large forest, crime rate is six times higher than elsewhere in the area. Each new crime Major Laurène Weiss solves with the help of her unusual team makes her sink deeper and deeper into secrets of the area.",
+      "origin_country": [
+        "BE",
+        "FR"
+      ],
+      "popularity": 10.717
+    },
+    {
+      "backdrop_path": "/aoUJkGp6c58R5pje3anrwoFE4c7.jpg",
+      "first_air_date": "2019-10-03",
+      "genre_ids": [
+        18,
+        10768
+      ],
+      "id": 76692,
+      "name": "Catherine the Great",
+      "origin_country": [
+        "GB"
+      ],
+      "original_language": "en",
+      "original_name": "Catherine the Great",
+      "overview": "This four-part historical drama follows the end of Catherine the Great's reign and her affair with Russian military leader Grigory Potemkin that helped shape the future of Russian politics.",
+      "poster_path": "/s50flEj06i7HmZx0lVMTHD4p6MF.jpg",
+      "vote_average": 7,
+      "vote_count": 31,
+      "popularity": 6.902
+    }
+  ],
+  "total_pages": 5,
+  "total_results": 98
+}
+
+
+
+
+

@@ -1,0 +1,403 @@
+Similar Movies response:
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/jrudoaXcoLyHRPdolyOGemXgPEs.jpg",
+      "genre_ids": [
+        36,
+        18
+      ],
+      "id": 369972,
+      "original_language": "en",
+      "original_title": "First Man",
+      "overview": "A look at the life of the astronaut, Neil Armstrong, and the legendary space mission that led him to become the first man to walk on the Moon on July 20, 1969.",
+      "poster_path": "/i91mfvFcPPlaegcbOyjGgiWfZzh.jpg",
+      "release_date": "2018-10-11",
+      "title": "First Man",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 3275,
+      "popularity": 23.401
+    },
+    {
+      "id": 95,
+      "video": false,
+      "vote_count": 5031,
+      "vote_average": 6.7,
+      "title": "Armageddon",
+      "release_date": "1998-07-01",
+      "original_language": "en",
+      "original_title": "Armageddon",
+      "genre_ids": [
+        28,
+        12,
+        878,
+        53
+      ],
+      "backdrop_path": "/462oYCZHNr4ptNEqLNsuOjusEdj.jpg",
+      "adult": false,
+      "overview": "When an asteroid threatens to collide with Earth, NASA honcho Dan Truman determines the only way to stop it is to drill into its surface and detonate a nuclear bomb. This leads him to renowned driller Harry Stamper, who agrees to helm the dangerous space mission provided he can bring along his own hotshot crew. Among them is the cocksure A.J. who Harry thinks isn't good enough for his daughter, until the mission proves otherwise.",
+      "poster_path": "/fMtOCd0EAdAzKtGLQiHjSUvbdNc.jpg",
+      "popularity": 24.734
+    },
+    {
+      "id": 568,
+      "video": false,
+      "vote_count": 3418,
+      "vote_average": 7.4,
+      "title": "Apollo 13",
+      "release_date": "1995-06-30",
+      "original_language": "en",
+      "original_title": "Apollo 13",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "backdrop_path": "/AfGp6Ev3BVdEd7L99kGQzOzsqRb.jpg",
+      "adult": false,
+      "overview": "The true story of technical troubles that scuttle the Apollo 13 lunar mission in 1970, risking the lives of astronaut Jim Lovell and his crew, with the failed journey turning into a thrilling saga of heroism. Drifting more than 200,000 miles from Earth, the astronauts work furiously with the ground crew to avert tragedy.",
+      "poster_path": "/9V6ZjTXFkQpKuhrBHSnLu5JCbnk.jpg",
+      "popularity": 27.314
+    },
+    {
+      "id": 286217,
+      "video": false,
+      "vote_count": 13869,
+      "vote_average": 7.7,
+      "title": "The Martian",
+      "release_date": "2015-09-30",
+      "original_language": "en",
+      "original_title": "The Martian",
+      "genre_ids": [
+        12,
+        18,
+        878
+      ],
+      "backdrop_path": "/3dPhs7hUnQLphDFzdkD407VZDYo.jpg",
+      "adult": false,
+      "overview": "During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive.",
+      "poster_path": "/5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg",
+      "popularity": 41.853
+    },
+    {
+      "id": 157336,
+      "video": false,
+      "vote_count": 22042,
+      "vote_average": 8.3,
+      "title": "Interstellar",
+      "release_date": "2014-11-05",
+      "original_language": "en",
+      "original_title": "Interstellar",
+      "genre_ids": [
+        12,
+        18,
+        878
+      ],
+      "backdrop_path": "/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+      "adult": false,
+      "overview": "Interstellar chronicles the adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+      "poster_path": "/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "popularity": 66.385
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/3No5nC3lwppGHxjcEbJGyFtTJvR.jpg",
+      "genre_ids": [
+        878
+      ],
+      "id": 2067,
+      "original_language": "en",
+      "original_title": "Mission to Mars",
+      "overview": "When contact is lost with the crew of the first Mars expedition, a rescue mission is launched to discover their fate.",
+      "poster_path": "/beDWEWxgFlt1UWvf2al9cjDol2i.jpg",
+      "release_date": "2000-03-10",
+      "title": "Mission to Mars",
+      "video": false,
+      "vote_average": 5.9,
+      "vote_count": 789,
+      "popularity": 11.896
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/zKThV9H9hw5A2syYqLQFQqGmbf3.jpg",
+      "genre_ids": [
+        18,
+        878,
+        9648,
+        10749
+      ],
+      "id": 2103,
+      "original_language": "en",
+      "original_title": "Solaris",
+      "overview": "A troubled psychologist is sent to investigate the crew of an isolated research station orbiting a bizarre planet.",
+      "poster_path": "/o839RFIxPrpgOMKQ21SOQl4908t.jpg",
+      "release_date": "2002-11-27",
+      "title": "Solaris",
+      "video": false,
+      "vote_average": 6,
+      "vote_count": 761,
+      "popularity": 9.913
+    },
+    {
+      "id": 395992,
+      "video": false,
+      "vote_count": 4868,
+      "vote_average": 6.4,
+      "title": "Life",
+      "release_date": "2017-03-22",
+      "original_language": "en",
+      "original_title": "Life",
+      "genre_ids": [
+        27,
+        878,
+        53
+      ],
+      "backdrop_path": "/nNh7vHHISVAaziJEqAq0P9iL52w.jpg",
+      "adult": false,
+      "overview": "The six-member crew of the International Space Station is tasked with studying a sample from Mars that may be the first proof of extra-terrestrial life, which proves more intelligent than ever expected.",
+      "poster_path": "/dr561Avhhmf5YaEqem5rfBa7JNy.jpg",
+      "popularity": 24.51
+    },
+    {
+      "id": 62,
+      "video": false,
+      "vote_count": 7073,
+      "vote_average": 8.1,
+      "title": "2001: A Space Odyssey",
+      "release_date": "1968-04-09",
+      "original_language": "en",
+      "original_title": "2001: A Space Odyssey",
+      "genre_ids": [
+        12,
+        9648,
+        878
+      ],
+      "backdrop_path": "/spoZUN4X1KiOc5S0plOyGAXLNtb.jpg",
+      "adult": false,
+      "overview": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
+      "poster_path": "/zmmYdPa8Lxx999Af9vnVP4XQ1V6.jpg",
+      "popularity": 34.34
+    },
+    {
+      "id": 2900,
+      "video": false,
+      "vote_count": 544,
+      "vote_average": 5.5,
+      "title": "The Astronaut's Wife",
+      "release_date": "1999-08-26",
+      "original_language": "en",
+      "original_title": "The Astronaut's Wife",
+      "genre_ids": [
+        18,
+        878,
+        53
+      ],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "When astronaut Spencer Armacost returns to Earth after a mission that nearly cost him his life, he decides to take a desk job in order to see his beautiful wife, Jillian, more often. Gradually, Jillian notices that Spencer's personality seems to have changed, but her concerns fade when she discovers that she's pregnant. As Jillian grows closer to becoming a mother, her suspicions about Spencer return. Why does it seem as if he's a different person?",
+      "poster_path": "/rEATfBs4exRHDGA15QkZH7TDXLv.jpg",
+      "popularity": 11.04
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nEtnuQWLRnbJPLqGCLUgobFc2P7.jpg",
+      "genre_ids": [
+        53,
+        878
+      ],
+      "id": 4437,
+      "original_language": "en",
+      "original_title": "2010",
+      "overview": "While planet Earth poises on the brink of nuclear self-destruction, a team of Russian and American scientists aboard the Leonov hurtles to a rendezvous with the still-orbiting Discovery spacecraft and it's sole known survivor, the homicidal computer HAL.",
+      "poster_path": "/mEWKXuCMv7mFMxXVSTI3v8UOQuq.jpg",
+      "release_date": "1984-12-06",
+      "title": "2010",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 516,
+      "popularity": 11.077
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/w2KUVzeOC1u6cQwvUV0qqi7QYxs.jpg",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "id": 9549,
+      "original_language": "en",
+      "original_title": "The Right Stuff",
+      "overview": "A chronicle of the original Mercury astronauts in the formation of America's space program: Alan Shepherd, the first American in space; Gus Grissom, the benighted astronaut for whom nothing works out as planned; John Glenn, the straight-arrow 'boy scout' of the bunch who was the first American to orbit the earth; and the remaining pilots: Deke Slayton, Scott Carpenter and Wally Schirra.",
+      "poster_path": "/btqTjNRxecYgQ1FGfVlLqSSNjz.jpg",
+      "release_date": "1983-10-20",
+      "title": "The Right Stuff",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 468,
+      "popularity": 11.066
+    },
+    {
+      "id": 10679,
+      "video": false,
+      "vote_count": 978,
+      "vote_average": 5.7,
+      "title": "Iron Sky",
+      "release_date": "2012-03-10",
+      "original_language": "en",
+      "original_title": "Iron Sky",
+      "genre_ids": [
+        28,
+        35,
+        878
+      ],
+      "backdrop_path": "/y7RMsHw1d5gtfedHPBoaOKuY6vy.jpg",
+      "adult": false,
+      "overview": "In the last moments of World War II, a secret Nazi space program evaded destruction by fleeing to the Dark Side of the Moon. During 70 years of utter secrecy, the Nazis construct a gigantic space fortress with a massive armada of flying saucers.",
+      "poster_path": "/tX5h6TZ84loTbU1YAWO0JhfzAaM.jpg",
+      "popularity": 11.464
+    },
+    {
+      "id": 601,
+      "video": false,
+      "vote_count": 7598,
+      "vote_average": 7.5,
+      "title": "E.T. the Extra-Terrestrial",
+      "release_date": "1982-06-11",
+      "original_language": "en",
+      "original_title": "E.T. the Extra-Terrestrial",
+      "genre_ids": [
+        12,
+        14,
+        878,
+        10751
+      ],
+      "backdrop_path": "/mXLVA0YL6tcXi6SJSuAh9ONXFj5.jpg",
+      "adult": false,
+      "overview": "After a gentle alien becomes stranded on Earth, the being is discovered and befriended by a young boy named Elliott. Bringing the extraterrestrial into his suburban California house, Elliott introduces E.T., as the alien is dubbed, to his brother and his little sister, Gertie, and the children decide to keep its existence a secret. Soon, however, E.T. falls ill, resulting in government intervention and a dire situation for both Elliott and the alien.",
+      "poster_path": "/cBfkE3HSH1NOyy1ftxlPw2l3ukb.jpg",
+      "popularity": 31.639
+    },
+    {
+      "id": 19995,
+      "video": false,
+      "vote_count": 21068,
+      "vote_average": 7.4,
+      "title": "Avatar",
+      "release_date": "2009-12-10",
+      "original_language": "en",
+      "original_title": "Avatar",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "backdrop_path": "/wcC7kCICL6x6zHUlUyNp9pWoqW1.jpg",
+      "adult": false,
+      "overview": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+      "poster_path": "/btnl50ZDJDSCal2NLQIYWw0XxvH.jpg",
+      "popularity": 32.164
+    },
+    {
+      "id": 340104,
+      "video": false,
+      "vote_count": 35,
+      "vote_average": 5.2,
+      "title": "Lucy in the Sky",
+      "release_date": "2019-09-20",
+      "original_language": "en",
+      "original_title": "Lucy in the Sky",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": "/rtpDfc1bYmSHLp8VK8xjxkolQY4.jpg",
+      "adult": false,
+      "overview": "Astronaut Lucy Cola returns to Earth after a transcendent experience during a mission to space – and begins to lose touch with reality in a world that now seems too small.",
+      "poster_path": "/qqYEiEbwAlif3k954uTS92UqUQz.jpg",
+      "popularity": 11.666
+    },
+    {
+      "id": 49047,
+      "video": false,
+      "vote_count": 11052,
+      "vote_average": 7.2,
+      "title": "Gravity",
+      "release_date": "2013-10-03",
+      "original_language": "en",
+      "original_title": "Gravity",
+      "genre_ids": [
+        18,
+        878,
+        53
+      ],
+      "backdrop_path": "/npFPqZeHlEPOlLEpykP6kuSsi6v.jpg",
+      "adult": false,
+      "overview": "Dr. Ryan Stone, a brilliant medical engineer on her first Shuttle mission, with veteran astronaut Matt Kowalsky in command of his last flight before retiring. But on a seemingly routine spacewalk, disaster strikes. The Shuttle is destroyed, leaving Stone and Kowalsky completely alone-tethered to nothing but each other and spiraling out into the blackness of space. The deafening silence tells them they have lost any link to Earth and any chance for rescue. As fear turns to panic, every gulp of air eats away at what little oxygen is left. But the only way home may be to go further out into the terrifying expanse of space.",
+      "poster_path": "/bO6h1R8xTFBX0jRoXolOYm93fp6.jpg",
+      "popularity": 24.266
+    },
+    {
+      "id": 8656,
+      "video": false,
+      "vote_count": 1724,
+      "vote_average": 6.1,
+      "title": "Deep Impact",
+      "release_date": "1998-05-08",
+      "original_language": "en",
+      "original_title": "Deep Impact",
+      "genre_ids": [
+        28,
+        18,
+        878
+      ],
+      "backdrop_path": "/w53FK3MoMLavk1sxErUiGMnLpf2.jpg",
+      "adult": false,
+      "overview": "A seven-mile-wide space rock is hurtling toward Earth, threatening to obliterate the planet. Now, it's up to the president of the United States to save the world. He appoints a tough-as-nails veteran astronaut to lead a joint American-Russian crew into space to destroy the comet before impact. Meanwhile, an enterprising reporter uses her smarts to uncover the scoop of the century.",
+      "poster_path": "/a3vQS7JKqlOb3MdVJHuTCP9s7Mg.jpg",
+      "popularity": 12.819
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/AmR3JG1VQVxU8TfAvljUhfSFUOx.jpg",
+      "genre_ids": [
+        27,
+        878
+      ],
+      "id": 348,
+      "original_language": "en",
+      "original_title": "Alien",
+      "overview": "During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet. When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when the alien parasite planted inside its unfortunate host is birthed.",
+      "poster_path": "/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+      "release_date": "1979-05-25",
+      "title": "Alien",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 8901,
+      "popularity": 33.479
+    },
+    {
+      "id": 126889,
+      "video": false,
+      "vote_count": 5631,
+      "vote_average": 5.9,
+      "title": "Alien: Covenant",
+      "release_date": "2017-05-09",
+      "original_language": "en",
+      "original_title": "Alien: Covenant",
+      "genre_ids": [
+        27,
+        878,
+        53
+      ],
+      "backdrop_path": "/6jajFcaY2YsfGQstJ5HaqZNVseX.jpg",
+      "adult": false,
+      "overview": "Bound for a remote planet on the far side of the galaxy, the crew of the colony ship 'Covenant' discovers what is thought to be an uncharted paradise, but is actually a dark, dangerous world—which has a sole inhabitant: the 'synthetic', David, survivor of the doomed Prometheus expedition.",
+      "poster_path": "/zecMELPbU5YMQpC81Z8ImaaXuf9.jpg",
+      "popularity": 27.999
+    }
+  ],
+  "total_pages": 9,
+  "total_results": 178
+}

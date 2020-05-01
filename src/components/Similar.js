@@ -5,7 +5,7 @@ import { getSimilar} from  "../lib/utils";
 import Cards from "./listing/Cards";
 
 const Similar = (props) =>{
-    const auth = useAuth0() || props.dummyAuth;
+    const auth = useAuth0() || props.dummyAuth; // Authentication Token From Auth0 or dummy Authentication Token for Storybook
     const { getTokenSilently } = auth;
     const [error, setError] = useState(false);
     const defaultSimilar = props.sample ? props.sample : []
@@ -20,14 +20,13 @@ const Similar = (props) =>{
     useEffect(() => {      
         const fetch = async () => {
             const token = await getTokenSilently()
-            await getSimilar(typeValue, idValue, token).then((res) => 
+            await getSimilar(typeValue, idValue, token).then((res) => // Get list of similar items based on media type
             {
                 if (res === undefined || (res.item && res.item.status_code)) {
                     setError(true)
                 }
                 setSimilar(res)
             }) 
-            
         }
         if(!props.sample) {
             fetch()
@@ -45,7 +44,6 @@ const Similar = (props) =>{
             />);
     }
 
-
     return(
         <div>
             <h3>{`Similar ${typeValue}s`}</h3>
@@ -62,11 +60,8 @@ const Similar = (props) =>{
                 </Row>
             </React.Fragment>
             )}
-        </div>
-        
-        
+        </div>     
     )
 }
-
 
 export default Similar ;

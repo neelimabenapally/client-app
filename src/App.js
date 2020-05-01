@@ -13,9 +13,7 @@ import Similar from "./components/Similar";
 import PrivateRoute from "./components/PrivateRoute";
 import history from "./lib/history";
 
-
 const App = () => {
-
   const { loading } = useAuth0();
 
   if (loading) {
@@ -26,21 +24,19 @@ const App = () => {
     <Container fluid>
       <Header />
       <div className="main_body">
-        <BrowserRouter history = {history}>
-        
+        <BrowserRouter history={history}>
           <Switch>
-            <PrivateRoute path="/tv/view/:id" component={DetailPage} /> 
-            <PrivateRoute path="/movie/view/:id" component={DetailPage} />    
+            <PrivateRoute path="/tv/view/:id" component={DetailPage} />
+            <PrivateRoute path="/movie/view/:id" component={DetailPage} />
             <PrivateRoute path="/listing/movie" component={Listing} />
             <PrivateRoute path="/listing/tv" component={Listing} />
             <PrivateRoute path="/profile" component={Profile} />
-            <PrivateRoute path="/listing/similar/:type/:id" component = {Similar}/>
+            <PrivateRoute path="/listing/similar/:type/:id" component={Similar} />
             <Route path="/" component={HomePage} />
             <Redirect from="*" to="/" />
           </Switch>
         </BrowserRouter>
       </div>
-      
     </Container>
   );
 }

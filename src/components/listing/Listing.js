@@ -7,9 +7,7 @@ import { useAuth0 } from "../../react-auth0-spa";
 import { reactLocalStorage } from 'reactjs-localstorage';
 import queryString from "query-string";
 
-
 const Listing = (props) => {
-    
     const user = reactLocalStorage.getObject('dbUser');
     const defautItems = props.sample ? props.sample : [];
     const [items, setItems] = useState(defautItems);
@@ -17,58 +15,49 @@ const Listing = (props) => {
     const [textFilter, setTextFilter] = useState("");
     const [favourites, setFavourites] = useState([]);
     const match = props.match;
-    const urlSegments = match.url.split("/"); 
-    const urlSegmentForApiCall = urlSegments[2] === 'fav' ? urlSegments[3]: urlSegments[2]
+    const urlSegments = match.url.split("/");
+    const urlSegmentForApiCall = urlSegments[2] === 'fav' ? urlSegments[3] : urlSegments[2]
     let apiUrl = generateListingUrl(urlSegmentForApiCall)
-    const auth = useAuth0() || props.dummyAuth;
-    const { getTokenSilently } = auth
-    
+    const auth = useAuth0() || props.dummyAuth; // Authentication Token From Auth0 or dummy Authentication Token for Storybook
+    const { getTokenSilently } = auth;
+
     useEffect(() => {
-
-
         const genre = filters.with_genres || 0
         const sort_by = filters.sort_by || ''
         const fetch = async () => {
             const token = await getTokenSilently()
-            getList(`${apiUrl}filter_sort/${genre}/${sort_by}`, token).then((list) => setItems(list) )
-            
-
-            let allFavourites = await getFavourites(urlSegmentForApiCall, user.username, token) 
-
+            getList(`${apiUrl}filter_sort/${genre}/${sort_by}`, token).then((list) => setItems(list)) //Get List of Media based on filters
+            let allFavourites = await getFavourites(urlSegmentForApiCall, user.username, token)// Get list of favourites
             if (allFavourites.status === 401) allFavourites = []
-            
             setFavourites(allFavourites.map(f => f.mediaId));
         }
         if (!props.sample) {
             fetch()
         }
-        
     }, [filters]);
 
-    const filteredItems = items.filter( (item) => {
+    const filteredItems = items.filter((item) => {
         const title = item.original_name || item.original_title
         return title.toLowerCase().search(textFilter.toLowerCase()) !== -1
     })
 
-    const removeFromFavourites = (itemToRemove) => { 
+    const removeFromFavourites = (itemToRemove) => {
         const index = favourites.indexOf(itemToRemove)
         const favCopy = [...favourites]
         favCopy.splice(index, 1)
-        setFavourites(favCopy) 
+        setFavourites(favCopy)
     }
 
     const addToFavourites = (item) => {
         setFavourites([...favourites, item])
     }
 
-
-
-    const cards = filteredItems.map(item => 
-        <Cards 
-            key={item.id} 
-            item={item} 
-            type={urlSegmentForApiCall} 
-            favourite={favourites.includes(item.id)} 
+    const cards = filteredItems.map(item =>
+        <Cards
+            key={item.id}
+            item={item}
+            type={urlSegmentForApiCall}
+            favourite={favourites.includes(item.id)}
             removeFromFavourites={removeFromFavourites}
             addToFavourites={addToFavourites}
             dummyAuth={props.dummyAuth}
@@ -77,10 +66,10 @@ const Listing = (props) => {
 
     return (
         <div>
-            <SearchBar 
-                updateFilters={setFilters} 
-                updateTextFilter={setTextFilter} 
-                match={props.match} 
+            <SearchBar
+                updateFilters={setFilters}
+                updateTextFilter={setTextFilter}
+                match={props.match}
                 location={props.location}
                 {...props}
             />
@@ -89,7 +78,6 @@ const Listing = (props) => {
             </Row>
         </div>
     )
-
 }
 
 export default Listing;

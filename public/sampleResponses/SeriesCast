@@ -1,0 +1,61 @@
+Series Cast Response:
+{
+  "cast": [
+    {
+      "character": "Tincke",
+      "credit_id": "5d7ab545af43243b22975d99",
+      "id": 231643,
+      "name": "Stef Aerts",
+      "gender": 0,
+      "profile_path": null,
+      "order": 500
+    },
+    {
+      "character": "",
+      "credit_id": "5d7ab55baf43247fa1979224",
+      "id": 1259085,
+      "name": "Ruth Beeckmans",
+      "gender": 0,
+      "profile_path": "/gr9WtnbqVK6XOjBvA1QhEUdgy1j.jpg",
+      "order": 500
+    },
+    {
+      "character": "",
+      "credit_id": "5d7ab571a843c10011e7b19b",
+      "id": 1519579,
+      "name": "Dick Carlier",
+      "gender": 0,
+      "profile_path": null,
+      "order": 500
+    },
+    {
+      "character": "",
+      "credit_id": "5d7ab581a843c13b13e76fce",
+      "id": 1414507,
+      "name": "Peter De Graef",
+      "gender": 0,
+      "profile_path": null,
+      "order": 500
+    },
+    {
+      "character": "",
+      "credit_id": "5d7ab59ba843c10012e7aa15",
+      "id": 1165551,
+      "name": "Manou Kersting",
+      "gender": 0,
+      "profile_path": null,
+      "order": 500
+    },
+    {
+      "character": "Vangenende",
+      "credit_id": "5d7ab5bfaf43243b21977d22",
+      "id": 932343,
+      "name": "Iwein Segers",
+      "gender": 0,
+      "profile_path": null,
+      "order": 500
+    }
+  ],
+  "crew": [],
+  "id": 93533
+}
